@@ -21,4 +21,5 @@ from django.urls import path, include
 urlpatterns = [
     path('blog/', include('blog.urls')), # blog/ 에 들어갈 때 우리는 blog.urls에 들어갈거야라고 코딩한것
     path('admin/', admin.site.urls),
+    path('', include('single_pages.urls')),
 ]
